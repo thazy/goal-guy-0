@@ -719,13 +719,13 @@ func (ss *Sim) ConfigExtReps() {
 	patgen.PermutedBinaryRows(et.Cols[2], 0, 0, 0)
 	patgen.PermutedBinaryRows(et.Cols[3], 0, 0, 0)
 	patgen.PermutedBinaryRows(et.Cols[4], 3, 1, 0)
-	et.SaveCSV("goal_guy_0_5x5_25_gen.dat", ',', true)
+	et.SaveCSV("goal-guy-0-5x5-25-gen.dat", ',', true)
 }
 
 // OpenExtReps opens an existing (permanent) CSV version of the ExtReps file
 func (ss *Sim) OpenExtReps() {
 	et := ss.ExtReps
-	err := et.OpenCSV("goal_guy_0_5x5_25_gen.dat", '\t')
+	err := et.OpenCSV("goal-guy-0-5x5-25-gen.dat", '\t')
 	if err != nil {
 		log.Println(err)
 	}
@@ -804,12 +804,12 @@ func (ss *Sim) ConfigGui() *gi.Window {
 	width := 1600
 	height := 1200
 
-	gi.SetAppName("goal_guy_0")
+	gi.SetAppName("goal-guy-0")
 	gi.SetAppAbout(`This demonstrates learning of basic goal-directed behavior. See <a href="https://github.com/emer/emergent">emergent on GitHub</a>.</p>`)
 
 	plot.DefaultFont = "Helvetica"
 
-	win := gi.NewWindow2D("goal_guy_0", "Goal Guy Phase 0", width, height, true)
+	win := gi.NewWindow2D("goal-guy-0", "Goal Guy Phase 0", width, height, true)
 
 	vp := win.WinViewport2D()
 	updt := vp.UpdateStart()
