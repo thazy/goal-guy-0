@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// goal_guy_0.go is a simple Phase 0 begin-with-success model to serve as a basis for learning motor and then instrumental actions
+// goal-guy-0.go is a simple Phase 0 begin-with-success model to serve as a basis for learning motor and then instrumental actions
 // based on the key idea of striving toward desired arbitrary outcome states. Phase 0 uses all localist reps
 // and standard error driven learning.  Phase 0.5 will convert some reps to full distributed.
 // Phase 1 will move to DeepLeabra implementation.
