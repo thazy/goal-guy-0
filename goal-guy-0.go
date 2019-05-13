@@ -678,7 +678,7 @@ func (ss *Sim) ConfigNet() {
 	// default is Above, YAlign = Front, XAligh = Center
 	//hid2Lay.SetRelPos(relpos.Rel{Rel: relpos.RightOf, Other: "Hidden1", YAlign: relpos.Front, Space: 2})
 
-	contextLay.SetRelPos(relpos.Rel{Rel: relpos.Below, Other: "Motor", YAlign: relpos.Front, Space: 2})
+	contextLay.SetRelPos(relpos.Rel{Rel: relpos.Above, Other: "Motor", YAlign: relpos.Front, Space: 2})
 	outcomeLay.SetRelPos(relpos.Rel{Rel: relpos.RightOf, Other: "Motor", YAlign: relpos.Front, Space: 2})
 	goalLay.SetRelPos(relpos.Rel{Rel: relpos.RightOf, Other: "Context", YAlign: relpos.Front, Space: 2})
 
